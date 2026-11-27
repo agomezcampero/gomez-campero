@@ -1,0 +1,42 @@
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin-inline: auto;
+  padding-inline: var(--space-m);
+}
+
+.container--narrow {
+  max-width: var(--container-narrow-width);
+  text-align: center;
+}
+
+.section {
+  padding-block: var(--space-xl);
+}
+
+.section--tinted {
+  background: var(--color-canvas-tinted);
+}
+
+.section__title {
+  font-size: clamp(1.75rem, 3.5vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.section__lead {
+  max-width: 40rem;
+  margin: var(--space-s) auto 0;
+  color: var(--color-ink-muted);
+  text-align: center;
+}
+
+.footer {
+  padding-block: var(--space-l);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-ink-subtle);
+  font-size: 0.875rem;
+  text-align: center;
+}
