@@ -1,10 +1,31 @@
 /*
- * This is a manifest file that'll be compiled into application.css.
- *
- * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
- * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
- * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
- * depending on specificity.
- *
- * Consider organizing styles into separate files for maintainability.
+ * Propshaft serves every file in this folder through `stylesheet_link_tag :app`.
+ * Files load alphabetically, so shared tokens and resets live here and the rest
+ * are split by concern: base, buttons, home, layout.
  */
+
+:root {
+  --color-ink: #16181d;
+  --color-ink-muted: #4b5262;
+  --color-ink-subtle: #6b7282;
+  --color-canvas: #ffffff;
+  --color-canvas-tinted: #f5f6f8;
+  --color-border: #e3e6ec;
+  --color-accent: #1e40af;
+  --color-accent-hover: #1a3591;
+  --color-accent-soft: #e8edfb;
+
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  --radius: 0.75rem;
+  --radius-pill: 999px;
+
+  --space-xs: 0.5rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.5rem;
+  --space-xl: clamp(3.5rem, 8vw, 6rem);
+
+  --container-width: 72rem;
+  --container-narrow-width: 34rem;
+}
